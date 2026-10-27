@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ChartSense India",
+  "version": "0.1.0",
+  "description": "Rule-based support/resistance zones, chart patterns and a risk-reward calculator for NSE/BSE stocks. Information only, not investment advice.",
+  "permissions": ["sidePanel", "storage"],
+  "host_permissions": [
+    "https://query1.finance.yahoo.com/*",
+    "https://*.nseindia.com/*",
+    "https://*.tradingview.com/*",
+    "https://www.screener.in/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "side_panel": { "default_path": "sidepanel.html" },
+  "action": { "default_title": "Open ChartSense" }
+}

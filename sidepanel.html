@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChartSense India</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brandrow">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="9" width="4" height="9" rx="1"/><rect x="10" y="4" width="4" height="14" rx="1"/><rect x="17" y="7" width="4" height="8" rx="1"/></svg>
+        <b>ChartSense</b><span class="beta">India</span>
+      </div>
+      <nav class="nav" id="nav" aria-label="Views">
+        <button type="button" data-v="analyse" aria-selected="true">Analyse</button>
+        <button type="button" data-v="learn" aria-selected="false">Learn</button>
+      </nav>
+    </div>
+    <form id="symForm" class="symrow" autocomplete="off">
+      <label class="sr" for="sym">Stock symbol</label>
+      <input id="sym" placeholder="Search symbol, e.g. RELIANCE" spellcheck="false" />
+      <label class="sr" for="exch">Exchange</label>
+      <select id="exch"><option value="NSE">NSE</option><option value="BSE">BSE</option></select>
+      <button type="submit" class="primary">Analyse</button>
+    </form>
+    <div class="tabs" role="tablist" id="tfTabs" aria-label="Timeframe"></div>
+  </header>
+
+  <main id="out"></main>
+  <main id="learn" hidden></main>
+
+  <footer class="legal">
+    Information only. Levels, patterns and ratios are calculated by fixed formulas from past prices and are not a
+    recommendation to buy, sell or hold. The publisher is not a SEBI-registered research analyst or investment adviser.
+    Prices come from a delayed public feed and can be wrong or late.
+  </footer>
+
+  <script type="module" src="sidepanel.js"></script>
+</body>
+</html>

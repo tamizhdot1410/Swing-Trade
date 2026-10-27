@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChartSense - Full chart</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+  <link rel="stylesheet" href="chart.css" />
+</head>
+<body class="full">
+  <header class="fbar">
+    <div class="ftitle"><b id="fsym">-</b><span id="fname"></span></div>
+    <div class="tabs" id="ftabs" role="tablist" aria-label="Timeframe"></div>
+    <div class="fplan" id="fplan"></div>
+  </header>
+  <div class="fchart"><canvas id="big" role="img" aria-label="Full candlestick chart with entry, stop and target"></canvas></div>
+  <p class="fnote" id="fnote"></p>
+  <script type="module" src="chart.js"></script>
+</body>
+</html>

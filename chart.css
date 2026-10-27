@@ -1,0 +1,13 @@
+body.full { padding: 0; height: 100vh; display: flex; flex-direction: column; }
+.fbar { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding: 12px 18px; border-bottom: 1px solid var(--rule); background: var(--paper); }
+.ftitle { display: flex; flex-direction: column; min-width: 150px; }
+.ftitle b { font-size: 18px; }
+.ftitle span { color: var(--muted); font-size: 12px; }
+.fbar .tabs { margin: 0; width: 280px; }
+.fplan { display: flex; flex-wrap: wrap; gap: 8px; margin-left: auto; }
+.fplan .pill { border: 1px solid var(--rule); background: var(--surface); border-radius: 10px; padding: 4px 12px; font-variant-numeric: tabular-nums; }
+.fplan .pill small { display: block; color: var(--muted); font-size: 11px; }
+.fplan .pill.t b { color: var(--up); } .fplan .pill.s b { color: var(--down); }
+.fchart { flex: 1; min-height: 0; padding: 12px 18px 0; }
+canvas#big { width: 100%; height: 100%; display: block; background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; }
+.fnote { color: var(--muted); font-size: 11.5px; margin: 8px 18px 12px; }
